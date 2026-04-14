@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  allowedDevOrigins: ["10.179.208.132:3000", "*.local-origin.dev"],
   reactCompiler: true,
 };
 
