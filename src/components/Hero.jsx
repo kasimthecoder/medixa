@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-
+import { Button as MovingButton } from "@/components/ui/moving-border";
 import { CopyIcon, SearchIcon } from "lucide-react";
 import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
 import {
@@ -29,10 +29,10 @@ const Hero = () => {
             place.
           </p>
           <Field className="mt-16 mx-auto w-[95%] lg:max-w-2xl">
-            <InputGroup className="h-18 lg:h-22 rounded-full w-2xl shadow-2xl text-3xl">
+            <InputGroup className="h-18 lg:h-22 rounded-full w-2xl shadow-2xl text-3xl border border-[#49535B] ">
               <InputGroupInput
                 id="inline-start-input"
-                placeholder="Search medicines..."
+                placeholder="Search medicines (e.g. Dolo 650, Crocin, fever)"
                 className="text-2xl h-16 pl-8"
                 style={{ fontSize: "18px" }}
               />

@@ -1,17 +1,18 @@
 import React from "react";
-
+import { BookCheck, BookOpenCheck, BookOpenText, Shield } from "lucide-react";
+import CategoryCard from "./CategoryCard";
 const OurCommitment = () => {
   return (
-    <div className="bg-[#F0F3FF] py-12 sm:py-16 mt-16 sm:mt-20 rounded-lg text-center">
+    <div className="bg-[#F0F3FF] py-12 sm:py-16 mt-16 sm:mt-20  text-center border-y border-[#49535B]">
       <div className="mx-auto w-full px-4 sm:px-6 md:px-8 max-w-7xl">
         <h1 className="text-xs sm:text-sm mb-4 font-bold text-[#003265] opacity-70">
-          OUR COMMITMENT
+          HOW IT HELPS
         </h1>
         <div className="flex flex-col lg:flex-row lg:items-center gap-6 sm:gap-8 lg:gap-10">
-          <div className="w-full lg:w-[40%]">
+          <div className="w-full lg:w-[40%] ">
             <img
-              src="https://images.pexels.com/photos/3873146/pexels-photo-3873146.jpeg"
-              className="w-full h-64 sm:h-80 lg:h-96 rounded-3xl sm:rounded-4xl shadow-lg sm:shadow-2xl object-cover"
+              src="https://images.unsplash.com/photo-1758598497259-b51e6ed6c73c?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="w-full h-64 border border-[#49535B] sm:h-80 lg:h-80 rounded-2xl sm:rounded-4xl shadow-lg sm:shadow-2xl object-cover blur-[1px]"
               alt="Healthcare commitment"
             />
           </div>
@@ -26,26 +27,32 @@ const OurCommitment = () => {
               clear and reliable information when you need it.
             </p>
             <div className="flex flex-col mt-6 sm:mt-8 gap-4">
-              <div className="w-full py-3 sm:py-4 rounded-lg">
-                <h1 className="font-bold text-[#003265] text-sm sm:text-base">
-                  Reliable Information
-                </h1>
-                <p className="text-[#587CB3] text-sm sm:text-base">
-                  Clear details on composition, uses, and side effects.
-                </p>
+              <div className="w-full py-3 sm:py-4 rounded-lg flex">
+                <div className="p-4 rounded-full mr-3 bg-[#DAE2FD] border border-[#49535B]">
+                  <BookCheck size={18} />
+                </div>
+                <div>
+                  <h1 className="font-bold text-[#003265] text-sm sm:text-base ">
+                    Reliable Information
+                  </h1>
+                  <p className="text-[#587CB3] text-sm sm:text-base">
+                    Clear details on composition, uses, and side effects.
+                  </p>
+                </div>
               </div>
-              <div className="w-full rounded-lg">
-                <h1 className="font-bold text-[#003265] text-sm sm:text-base">
-                  Easy Comparison
-                </h1>
-                <p className="text-[#587CB3] text-sm sm:text-base">
-                  Clear details on composition, uses, and side effects.
-                </p>
+              <div className="w-full rounded-lg flex">
+                <div className="p-4 rounded-full mr-3 bg-[#DAE2FD] border border-[#49535B]">
+                  <BookOpenText size={18} />
+                </div>
+                <div className="">
+                  <h1 className="font-bold text-[#003265] text-sm sm:text-base">
+                    Easy Comparison
+                  </h1>
+                  <p className="text-[#587CB3] text-sm sm:text-base">
+                    Compare medicines by price, composition, and effects.
+                  </p>
+                </div>
               </div>
-              {/* <div className="bg-white flex-1  p-5 w-full rounded-lg shadow-sm  ">
-                <h1 className="font-bold ">Find Alternatives</h1>
-                <p>Clear details on composition, uses, and side effects.</p>
-              </div> */}
             </div>
           </div>
         </div>
