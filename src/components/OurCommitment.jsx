@@ -4,11 +4,11 @@ import CategoryCard from "./CategoryCard";
 const OurCommitment = () => {
   return (
     <div className="bg-[#F0F3FF] py-12 sm:py-16 mt-16 sm:mt-20  text-center border-y border-[#49535B]">
-      <div className="mx-auto w-full px-4 sm:px-6 md:px-8 max-w-7xl">
+      <div className=" mx-auto text-[#49535B] flex h-full flex-col w-full max-w-7xl items-center gap-12 px-6 sm:px-4 ">
         <h1 className="text-xs sm:text-sm mb-4 font-bold text-[#003265] opacity-70">
           HOW IT HELPS
         </h1>
-        <div className="flex flex-col lg:flex-row lg:items-center gap-6 sm:gap-8 lg:gap-10">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-6 sm:gap-8 lg:gap-10 ">
           <div className="w-full lg:w-[40%] ">
             <img
               src="https://images.unsplash.com/photo-1758598497259-b51e6ed6c73c?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
