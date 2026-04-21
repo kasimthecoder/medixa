@@ -1,12 +1,16 @@
+import { Pill } from "lucide-react";
 import React from "react";
 
-const CategoryCard = ({ name, icon }) => {
+const CategoryCard = ({ name, count, icon: Icon }) => {
   return (
-    <div className=" h-40 lg:w-32 w-38 flex-col items-center justify-center p-4 rounded-xl bg-[#F0F3FF] border border-[#49535B] text-center gap-2 cursor-pointer shadow-lg hover:scale-101 transition-all transition-duration-300 hover:shadow-xl">
-      <div className="bg-white p-4 rounded-xl flex justify-center w-16 h-16 mx-auto shadow-sm border border-[#49535B]">
-        {icon}
+    <div className="bg-[#F0F3FF] w-full lg:w-[23%] rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 cursor-pointer border border-[#49535B]">
+      <div className=" bg-white rounded-md  w-16 h-16 flex items-center justify-center mb-4 border-[#49535B] border">
+        <Icon size={32} color="#49535B" className="" />
       </div>
-      <div className="pt-4 font-medium text-[#49535B]">{name}</div>
+      <h3 className="text-sm font-medium text-[#49535B]">
+        {name}
+        <span className="text-xs text-gray-500 ml-2">({count}+)</span>
+      </h3>
     </div>
   );
 };

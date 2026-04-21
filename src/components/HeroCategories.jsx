@@ -8,7 +8,7 @@ import {
   Tablets,
   Thermometer,
 } from "lucide-react";
-import CategoryCard from "./CategoryCard";
+import CategoryCard from "./HeroCategoryCard";
 const HeroCategories = () => {
   const categories = [
     {

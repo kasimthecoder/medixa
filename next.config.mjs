@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  allowedDevOrigins: ["10.177.92.132"],
+  allowedDevOrigins: ["10.167.153.132"],
   reactCompiler: true,
 };
 

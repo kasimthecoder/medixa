@@ -20,11 +20,11 @@ const navItems = [
   },
   {
     title: "Categories",
-    href: "#",
+    href: "categories",
   },
   {
     title: "Compare",
-    href: "#",
+    href: "compare",
   },
 ];
 

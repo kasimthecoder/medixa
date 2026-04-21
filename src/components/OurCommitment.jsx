@@ -1,6 +1,6 @@
 import React from "react";
 import { BookCheck, BookOpenCheck, BookOpenText, Shield } from "lucide-react";
-import CategoryCard from "./CategoryCard";
+import CategoryCard from "./HeroCategoryCard";
 const OurCommitment = () => {
   return (
     <div className="bg-[#F0F3FF] py-12 sm:py-16 mt-16 sm:mt-20  text-center border-y border-[#49535B]">
